@@ -14,7 +14,6 @@ public class EstoqueService extends UnicastRemoteObject implements EstoqueRMI {
 	private Map<String, ItemEstoque> repositorio = new HashMap<String, ItemEstoque>();
 
 	public EstoqueService() throws RemoteException {
-		super();
 		repositorio.put("ARQ", new ItemEstoque("ARQ", 5));
 		repositorio.put("SOA", new ItemEstoque("SOA", 2));
 		repositorio.put("TDD", new ItemEstoque("TDD", 3));
@@ -24,8 +23,8 @@ public class EstoqueService extends UnicastRemoteObject implements EstoqueRMI {
 	}
 
 	@Override
-	public Integer getQuantidade(String codigo) throws RemoteException {
-		return repositorio.get(codigo).getQuantidade();
+	public ItemEstoque getItemEstoque(String codigo) throws RemoteException {
+		return repositorio.get(codigo);
 	}
 
 }

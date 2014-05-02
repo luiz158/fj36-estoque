@@ -1,10 +1,12 @@
-package br.com.caelum.fj36.modelo;
+package br.com.caelum.fj36.serializacao;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.List;
+
+import br.com.caelum.fj36.modelo.ItemEstoque;
 
 public class TestaLeituraDeObjetos {
 

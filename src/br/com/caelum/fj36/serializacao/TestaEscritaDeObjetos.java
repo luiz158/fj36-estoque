@@ -1,4 +1,4 @@
-package br.com.caelum.fj36.modelo;
+package br.com.caelum.fj36.serializacao;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.caelum.fj36.modelo.ItemEstoque;
 
 public class TestaEscritaDeObjetos {
 
